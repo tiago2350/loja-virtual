@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header,
+  section h2,
+  section h3 {
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+  }
+  
+  body,
+  input,
+  textarea {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  header {
+    padding: 1rem 0;
+    background: linear-gradient(0, #24945c, #000000);
+    color: #ecf0f1;
+  }
+  
+  header nav li {
+    display: inline;
+    margin-left: 1rem;
+    color: #ecf0f1;
+    font-size: 1.125rem;
+  }
+  
+  header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  header .container,
+  section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .brands-list img {
+    height: 1.5rem;
+  }
+  
+  .brands-list li {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+  
+  .games-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 3rem;
+  }
+  
+  .games-img img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .about-store {
+    font-style: italic;
+    border-bottom: 2px solid #0a0a0a;
+  }
+  
+  .about-products {
+    font-style: italic;
+    border-bottom: 2px solid #dd2020;
+  }
+  
+  section .container {
+    align-items: flex-start;
+  }
+  
+  section {
+    padding: 1.5rem 0;
+    color: #0e0d0d;
+  }
+  
+  section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  section h3 {
+    margin-bottom: 1rem;
+  }
+  
+  section p {
+    margin-bottom: 0.5rem;
+  }
+  
+  #products .container {
+    display: block;
+  }
+  
+  .products-methods {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .store-front {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin-right: 2rem;
+  }
+  
+  #name-game {
+    font-weight: bold;
+  }
+  
+  button {
+    background: #dd2020;
+    color: #ecf0f1;
+    border: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-family: "Bungee", sans-serif;
+    font-size: 1.125rem;
+  }
+  
+  button:hover {
+    background: #000000;
+  }
+  
+  footer {
+    background: linear-gradient(0, #24945c, #000000);
+    color: #ecf0f1;
+    padding: 4rem 0;
+    text-align: center;
+    font-family: "Bungee", sans-serif;
+  }
+  
+    @media screen and (max-width: 640px) {
+    header {
+      flex-direction: column;
+    }
+  
+    header nav li {
+      font-size: 1rem; /
+    }
+  
+    html {
+      overflow: none;
+    }
+  
+    .container {
+      max-width: 90%; 
+    }
+  
+    #about .container {
+      flex-direction: column; 
+    }
+  
+    #producst .container {
+      flex-direction: column;
+    }
+  
+    .games-img {
+      grid-template-columns: 1fr; 
+    }
+  
+    .games-img img {
+      object-fit: contain;
+    }
+  
+    .store-front {
+      width: 100%; 
+      height: auto; 
+      margin-right: 0; 
+    }
+  
+    #products {
+      flex-direction: column;
+      margin-left: 2rem;
+    }
+  
+    .playstation {
+      color: #1616e2;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+    }
+  
+    .btn-playstation {
+      background-color: #1616e2;
+      padding: 0.25rem 0.25rem; /
+      font-size: 1rem; 
+    }
+  
+    .xbox {
+      color: green;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+    }
+  
+    .btn-xbox {
+      background-color: green;
+      padding: 0.25rem 0.25rem; 
+      font-size: 1rem;
+    }
+  
+    button {
+      padding: 0.25rem 0.25rem; 
+      font-size: 1rem; 
+    }
+  }
+  
+  @media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+      padding: 0 2rem;
+      max-width: 90%;
+    }
+  
+    html,
+    body {
+      overflow-x: hidden;
+    }
+  
+    header {
+      display: block;
+    }
+  
+    #about .container {
+      flex-direction: column; 
+    }
+  
+    .games-img {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  
+    .store-front {
+      width: 95%;
+    }
+  }
